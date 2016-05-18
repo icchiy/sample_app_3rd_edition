@@ -23,6 +23,7 @@ group :development, :test do
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
+  gem 'pry-rails'
 end
 
 group :test do
@@ -37,4 +38,3 @@ group :production do
   gem 'puma',           '3.1.0'
 end
 
-gem 'pry-rails'

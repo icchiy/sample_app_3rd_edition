@@ -173,6 +173,16 @@ aside {
   }
 }
 
+.profile{
+  overflow: auto;
+  margin-top: 5px;
+  padding: 0;
+  width:260px;
+  p{
+  color:gray
+  }
+}
+
 .user_avatars {
   overflow: auto;
   margin-top: 10px;

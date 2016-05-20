@@ -10,6 +10,16 @@
     <% if current_user?(micropost.user) %>
       <%= link_to "delete", micropost, method: :delete,
                                        data: { confirm: "You sure?" } %>
+      <% else %>
+      <%= link_to "comment", "/microposts/#{micropost.id}/comments/new" %>
+    <% end %>
+    <% if micropost.comments %>
+        <% micropost.comments.each do |comment| %>
+          <p><%= comment.comment %></p>
+          nil comment
+        <% end %>
+        <% else %>
+      <p>なし</p>
     <% end %>
   </span>
 </li>
